@@ -1,0 +1,15 @@
+{
+  "name": "web-design-comunity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./src/styles/input.scss ./public/style.css",
+    "dev": "sass src/styles/input.scss public/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

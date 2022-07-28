@@ -1,0 +1,30 @@
+$background-color: #F6F6F6;
+$primary_green_color: #1ABF68;
+$primary_white_color: #fff;
+$blue-dark: #051441;
+$blue-light: #554BFE;
+$yellow-light: #F1A614;
+$pink-light: #F83B6B;
+
+$font-color-header: #2C2C51;
+$font-color-help-center: #373D46;
+$font-color-service: #677294;
+$font-color-footer: #69697B;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin responsive ($device: false) {
+  @if $device == mobile {
+    @media only screen and (max-width:480px) {
+      @content
+    }
+  } @else {
+    @media only screen and (min-width: 480px) and (max-width:768px) {
+      @content
+    }
+  }
+}
