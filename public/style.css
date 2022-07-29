@@ -69,7 +69,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-image: url("../../public/images/background_header.png");
+  background-image: url("./images/background_header.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -98,6 +98,11 @@ body {
 .hero-section input[type=search]::placeholder {
   font-size: 15px;
   color: #a1a7b7;
+}
+.hero-section input[type=search]:focus {
+  border: none;
+  border-left: 3px solid #1ABF68;
+  outline: none;
 }
 
 .main {

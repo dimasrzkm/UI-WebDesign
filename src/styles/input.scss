@@ -52,7 +52,7 @@
   justify-content: start;
   align-items: center;
 
-  background-image: url("../../public/images/background_header.png");
+  background-image: url("./images/background_header.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -81,6 +81,11 @@
     &::placeholder {
       font-size: 15px;
       color: #a1a7b7;
+    }
+    &:focus {
+      border: none;
+      border-left: 3px solid $primary_green_color;
+      outline: none;
     }
   }
 }
@@ -158,4 +163,5 @@
       }
     }
   }
+  
 }
