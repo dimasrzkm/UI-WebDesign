@@ -84,3 +84,78 @@
     }
   }
 }
+.main {
+  background-color: $background-color;
+  padding: 98px 120px;
+
+  .posts {
+    text-align: center;
+
+    h5 {
+      font-size: 14px;
+      font-weight: 400;
+      color: $primary_green_color;
+      letter-spacing: 2px;
+    }
+    h3 {
+      font-size: 34px;
+      font-weight: 500;
+    }
+
+    .wrapper-posts {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      .card-post {
+        background-color: #fff;
+        margin-top: 73px;
+        min-width: 370px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+  
+        .circle {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+        .circle-yellow {
+          @extend .circle;
+          background-color: $yellow-light;
+          box-shadow: 0 20px 30px rgba(#D39523, 30%);
+        }
+        .circle-blue {
+          @extend .circle;
+          background-color: $blue-light;
+          box-shadow: 0 20px 30px rgba(#453BF7, 30%);
+        }
+        .circle-pink {
+          @extend .circle;
+          background-color: $pink-light;
+          box-shadow: 0 20px 30px rgba(#F83B6B, 30%);
+        }
+        h4 { 
+          margin-top: 33px; 
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        h5 { 
+          margin-bottom: 18px;
+          color: $yellow-light;
+        }
+
+        &:nth-child(2) {
+          h5 { color: $blue-light; }
+        }
+        &:last-child {
+          h5 { color: $pink-light; }
+        }
+
+      }
+    }
+  }
+}
