@@ -220,4 +220,91 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  padding: 118px 98px 29px;
+}
+.footer .wrapper-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .wrapper-footer .all-wrapper-footer, .footer .wrapper-footer .footer-info, .footer .wrapper-footer .footer-products, .footer .wrapper-footer .footer-company, .footer .wrapper-footer .footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.footer .wrapper-footer .footer-logo img {
+  width: 142.25px;
+  height: 40px;
+}
+.footer .wrapper-footer .footer-logo p {
+  color: #69697B;
+  font-size: 14px;
+}
+.footer .wrapper-footer .footer-logo h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials {
+  display: flex;
+  gap: 9px;
+  flex-direction: row;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials .box {
+  width: 40px;
+  height: 40px;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials .box:first-child {
+  background-color: #456BBA;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials .box:nth-child(2) {
+  background-color: #00ACED;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials .box:nth-child(3) {
+  background-color: #F73434;
+}
+.footer .wrapper-footer .footer-logo .wrapper-socials .box:last-child {
+  background-color: #0077B5;
+}
+.footer .wrapper-footer .footer-company h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer .wrapper-footer .footer-company a {
+  font-size: 13px;
+  color: #69697B;
+  text-decoration: none;
+}
+.footer .wrapper-footer .footer-products h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer .wrapper-footer .footer-products a {
+  font-size: 13px;
+  color: #69697B;
+  text-decoration: none;
+}
+.footer .wrapper-footer .footer-info h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer .wrapper-footer .footer-info p {
+  font-size: 13px;
+  color: #69697B;
+  text-decoration: none;
+}
+.footer .wrapper-footer .footer-info .phone-number {
+  color: #1ABF68;
+}
+.footer .wrapper-copyright {
+  padding: 30px;
+  border-top: 1px solid #E4E1EA;
+  margin-top: 4rem;
+  text-align: center;
+  color: #908E94;
+}
+.footer .wrapper-copyright .author {
+  color: #2C2C51;
+}
+
 /*# sourceMappingURL=style.css.map */

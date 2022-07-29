@@ -225,3 +225,104 @@
     }
   }
 }
+.footer {
+  padding: 118px 98px 29px;
+  .wrapper-footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    .all-wrapper-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 25px;
+    }
+
+    .footer-logo  {
+      @extend .all-wrapper-footer;  
+
+      img {
+        width: 142.25px;
+        height: 40px;
+      }
+      p {
+        color: $font-color-footer;
+        font-size: 14px;
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .wrapper-socials {
+        display: flex;
+        gap: 9px;
+        flex-direction: row;
+        .box {
+          width: 40px;
+          height: 40px;
+          &:first-child {
+            background-color: #456BBA;
+          }
+          &:nth-child(2) {
+            background-color: #00ACED;
+          }
+          &:nth-child(3) {
+            background-color: #F73434;
+          }
+          &:last-child {
+            background-color: #0077B5;
+          }
+        }
+      }
+    }
+    .footer-company {
+      @extend .all-wrapper-footer;
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      a {
+        font-size: 13px;
+        color: $font-color-footer;
+        text-decoration: none;
+      }
+    }
+    .footer-products {
+      @extend .all-wrapper-footer;
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      a {
+        font-size: 13px;
+        color: $font-color-footer;
+        text-decoration: none;
+      }
+    }
+    .footer-info {
+      @extend .all-wrapper-footer;
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 13px;
+        color: $font-color-footer;
+        text-decoration: none;
+      }
+      .phone-number {
+        color: $primary_green_color;
+      }
+    }
+  }
+  .wrapper-copyright {
+    padding: 30px;
+    border-top: 1px solid #E4E1EA;
+    margin-top: 4rem;
+    text-align: center;
+    color: #908E94;
+    .author {
+      color: $font-color-header;
+    }
+  }
+}
