@@ -27,7 +27,7 @@
     }
     .help-button {
       display: flex;
-      gap: .5rem;
+      gap: 0.5rem;
 
       .button-help {
         background-color: $button-background;
@@ -56,8 +56,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  
-  h2, h4 {
+
+  h2,
+  h4 {
     color: $font-color-header;
   }
   h2 {
@@ -90,10 +91,9 @@
   }
 }
 .main {
-  background-color: $background-color;
-  padding: 98px 120px;
-
   .posts {
+    background-color: $background-color;
+    padding: 98px 120px;
     text-align: center;
 
     h5 {
@@ -122,7 +122,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 4px;
-  
+
         .circle {
           width: 70px;
           height: 70px;
@@ -131,37 +131,97 @@
         .circle-yellow {
           @extend .circle;
           background-color: $yellow-light;
-          box-shadow: 0 20px 30px rgba(#D39523, 30%);
+          box-shadow: 0 20px 30px rgba(#d39523, 30%);
         }
         .circle-blue {
           @extend .circle;
           background-color: $blue-light;
-          box-shadow: 0 20px 30px rgba(#453BF7, 30%);
+          box-shadow: 0 20px 30px rgba(#453bf7, 30%);
         }
         .circle-pink {
           @extend .circle;
           background-color: $pink-light;
-          box-shadow: 0 20px 30px rgba(#F83B6B, 30%);
+          box-shadow: 0 20px 30px rgba(#f83b6b, 30%);
         }
-        h4 { 
-          margin-top: 33px; 
+        h4 {
+          margin-top: 33px;
           font-weight: 400;
           margin-bottom: 10px;
         }
-        h5 { 
+        h5 {
           margin-bottom: 18px;
           color: $yellow-light;
         }
 
         &:nth-child(2) {
-          h5 { color: $blue-light; }
+          h5 {
+            color: $blue-light;
+          }
         }
         &:last-child {
-          h5 { color: $pink-light; }
+          h5 {
+            color: $pink-light;
+          }
         }
-
       }
     }
   }
-  
+  .service {
+    padding: 98px 120px;
+    text-align: center;
+
+    h5 {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      color: $primary_green_color;
+    }
+
+    h3 {
+      font-size: 34px;
+      font-weight: 400;
+      color: $font-color-help-center;
+    }
+
+    .wrapper-service {
+      margin-top: 73px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      .card-service {
+        max-width: 370px;
+        padding: 39px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 38px;
+        transition: all 0.1s ease;
+
+        .thumbnail {
+          width: 48px;
+          height: 46;
+        }
+
+        h3 {
+          font-size: 18px;
+          font-weight: 400;
+          color: $font-color-header;
+        }
+
+        p {
+          font-size: 14px;
+          text-align: left;
+          color: $font-color-service;
+        }
+
+        &:hover {
+          border-top: 3px solid $primary_green_color;
+          box-shadow: 0 20px 10px rgba(#000, 3%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

@@ -74,7 +74,8 @@ body {
   background-size: contain;
   background-position: bottom;
 }
-.hero-section h2, .hero-section h4 {
+.hero-section h2,
+.hero-section h4 {
   color: #2C2C51;
 }
 .hero-section h2 {
@@ -105,11 +106,9 @@ body {
   outline: none;
 }
 
-.main {
+.main .posts {
   background-color: #F6F6F6;
   padding: 98px 120px;
-}
-.main .posts {
   text-align: center;
 }
 .main .posts h5 {
@@ -169,6 +168,56 @@ body {
 }
 .main .posts .wrapper-posts .card-post:last-child h5 {
   color: #F83B6B;
+}
+.main .service {
+  padding: 98px 120px;
+  text-align: center;
+}
+.main .service h5 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #1ABF68;
+}
+.main .service h3 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #373D46;
+}
+.main .service .wrapper-service {
+  margin-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.main .service .wrapper-service .card-service {
+  max-width: 370px;
+  padding: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+  transition: all 0.1s ease;
+}
+.main .service .wrapper-service .card-service .thumbnail {
+  width: 48px;
+  height: 46;
+}
+.main .service .wrapper-service .card-service h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2C2C51;
+}
+.main .service .wrapper-service .card-service p {
+  font-size: 14px;
+  text-align: left;
+  color: #677294;
+}
+.main .service .wrapper-service .card-service:hover {
+  border-top: 3px solid #1ABF68;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
