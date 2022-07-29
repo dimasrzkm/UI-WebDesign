@@ -11,10 +11,30 @@ $font-color-help-center: #373D46;
 $font-color-service: #677294;
 $font-color-footer: #69697B;
 
+$button-background: #EEEDFF;
+
+::root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+// global class
+
+.button {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  background-color: red;
+  border-radius: 3px;
 }
 
 @mixin responsive ($device: false) {

@@ -1,1 +1,86 @@
 @import "./global.scss";
+
+.header {
+  height: 100vh;
+}
+.navbar {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+
+  .navbar-links {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+
+    .links {
+      display: flex;
+      gap: 3.063rem;
+
+      a {
+        color: $blue-dark;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+    .help-button {
+      display: flex;
+      gap: .5rem;
+
+      .button-help {
+        background-color: $button-background;
+        color: $primary_green_color;
+        font-weight: 600;
+      }
+      .button-login {
+        background-color: $primary_green_color;
+        color: $primary_white_color;
+        font-weight: 500;
+      }
+    }
+  }
+  .menu-hamburger {
+    display: none;
+  }
+}
+.hero-section {
+  height: calc(100vh - 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  background-image: url("../../public/images/background_header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  
+  h2, h4 {
+    color: $font-color-header;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 80px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  input[type="search"] {
+    margin-top: 6.688rem;
+    padding: 8px 24px;
+    border: none;
+    border-left: 3px solid $primary_green_color;
+    box-shadow: 0 4px 4px rgba(#000, 25%);
+    width: 574px;
+    height: 60px;
+    &::placeholder {
+      font-size: 15px;
+      color: #a1a7b7;
+    }
+  }
+}
